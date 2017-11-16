@@ -1,6 +1,6 @@
 {
   "name": "@stratodem/js-archetype",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The StratoDem Analytics scaffolding for a JavaScript project",
   "license": "MIT",
   "dependencies": {
