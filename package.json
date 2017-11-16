@@ -1,0 +1,66 @@
+{
+  "name": "js-archetype",
+  "version": "1.0.0",
+  "description": "The StratoDem Analytics scaffolding for a JavaScript project",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-plugin-flowtype": "^2.39.1",
+    "npm-check-updates": "^2.13.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StratoDem/js-archetype.git"
+  },
+  "jest": {
+    "modulePaths": [
+      "<rootDir>/js"
+    ],
+    "testResultsProcessor": "./node_modules/jest-junit",
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "^react-table/react-table.css$": "identity-obj-proxy",
+      "^react-bootstrap-slider/src/css/bootstrap-slider.min.css$": "identity-obj-proxy",
+      "^config$": "<rootDir>/configs/app-config.js",
+      "\\.(css|less)$": "identity-obj-proxy",
+      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "testRegex": "\\.test\\.js$",
+    "setupFiles": [
+      "raf/polyfill",
+      "<rootDir>assets/js/_test-env.js"
+    ],
+    "collectCoverage": true,
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "jest-junit": {
+    "suiteName": "ArgosUnchained jest tests",
+    "output": "./junit.xml",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "usePathForSuiteName": "true"
+  },
+  "keywords": [
+    "django",
+    "real-estate",
+    "estate",
+    "what-if"
+  ],
+  "author": "StratoDem Analytics",
+  "bugs": {
+    "url": "https://github.com/StratoDem/ArgosUnchained/issues"
+  },
+  "homepage": "https://github.com/StratoDem/ArgosUnchained#readme",
+  "scripts": {
+    "test": "jest --verbose --coverage || true",
+    "test_update": "jest --verbose -u",
+    "check_updates": "node_modules/.bin/npm-check-updates"
+  }
+}
