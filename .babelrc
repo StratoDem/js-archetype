@@ -18,7 +18,7 @@
             {
                 "polyfill": false,
                 "regenerator": true
-            }`
+            }
         ],
         "transform-class-properties"
     ]
