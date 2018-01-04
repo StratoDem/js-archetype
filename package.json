@@ -63,23 +63,18 @@
     ]
   },
   "jest-junit": {
-    "suiteName": "ArgosUnchained jest tests",
+    "suiteName": "js-archetype jest tests",
     "output": "./junit.xml",
     "classNameTemplate": "{classname}-{title}",
     "titleTemplate": "{classname}-{title}",
     "usePathForSuiteName": "true"
   },
-  "keywords": [
-    "django",
-    "real-estate",
-    "estate",
-    "what-if"
-  ],
+  "keywords": [],
   "author": "StratoDem Analytics",
   "bugs": {
-    "url": "https://github.com/StratoDem/ArgosUnchained/issues"
+    "url": "https://github.com/StratoDem/js-archetype/issues"
   },
-  "homepage": "https://github.com/StratoDem/ArgosUnchained#readme",
+  "homepage": "https://github.com/StratoDem/js-archetype#readme",
   "scripts": {
     "test": "jest --verbose --coverage || true",
     "test_update": "jest --verbose -u",
